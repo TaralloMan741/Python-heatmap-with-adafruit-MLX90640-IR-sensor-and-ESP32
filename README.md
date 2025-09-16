@@ -21,7 +21,7 @@ Display an heatmap using a python script that reads data through a serial port. 
 * Install pip:
     * On Windows run the following command on command line (cmd): `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
     * On LINUX run the following commands on terminal: `sudo apt update`, `sudo apt install python3-pip`. to check the version type `pip3 --version`.
-* Open VScode, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search python, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
+* Open VScode, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search `python`, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
 * Install pyserial numpy and matplotlib, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
 # 3) Program ESP32 on Arduino IDE
