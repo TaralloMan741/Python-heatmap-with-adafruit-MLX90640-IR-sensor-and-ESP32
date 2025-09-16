@@ -3,7 +3,7 @@ Display an heatmap using a python script that reads data through a serial port. 
 
 # Shopping list
 * Arduino IDE (Legacy or 2)
-* VS code
+* VScode
 * ESP32 dev kit C V2
 * Adafruit MLX 90640 IR sensor
 
@@ -15,13 +15,13 @@ Display an heatmap using a python script that reads data through a serial port. 
 * Connect the board and go to `tools >> port` to select the port which the board is connected to. On windows it is called `COM3` (the number may change), for linux users the port is called `“/dev/ttyUSB0”`.
 * Install the libraries for MLX 90640. Go to `tools >> manage libraries`, the library manager opens up, search `"adafruit_mlx90640"`, click on install it will ask you if you want to install all or just mlx90640 libraries, click on `"install all"`.
 
-# 2) Setup VS code  
-* Install VS code from the following link https://code.visualstudio.com/.
+# 2) Setup VScode  
+* Install VScode from the following link https://code.visualstudio.com/.
 * install python from the following link https://www.python.org/. If you are on LINUX you might have it already installed, to check open the terminal and type `python3 --version`, the same code can be used on command window (cmd) on Windowns.
 * Install pip:
     * On Windows run the following command on command line (cmd): `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
     * On LINUX run the following commands on terminal: `sudo apt update`, `sudo apt install python3-pip`. to check the version type `pip3 --version`.
-* Open VS code, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search python, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
+* Open VScode, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search python, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
 * Install pyserial numpy and matplotlib, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
 # 3) program ESP32 on Arduino IDE
@@ -126,10 +126,10 @@ void loop() {
   }
 }
 ```
-* upload the sketch on the ESP32, then open the serial monitor to verify that the esp32 is functioning correctly, you shoud see a 32 x 24 matrix (with symbols or numbers depending on which line you commented between PRINT_TEMPERATURES or PRINT_ASCIIART). if this is not the case you have to change the BAUDRATE on the serial monitor to 115200, or whatever value is written in `Serial.begin(115200);`.
-* Before going to Vs code be sure to close the serial monitor.
+* upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see a 32 x 24 matrix (with symbols or numbers depending on which line you commented between PRINT_TEMPERATURES or PRINT_ASCIIART). if this is not the case you have to change the BAUDRATE on the serial monitor to 115200, or whatever value is written in `Serial.begin(115200);`.
+* Before going to Vscode be sure to close the serial monitor.
 
-# 4) plot real-time heatmap on VS code 
+# 4) plot real-time heatmap on VScode 
 * Open a new file. On the top left corner clock on `file >> New Text File` (choose python) and copy the foolowing script:
   
 ```
