@@ -17,7 +17,7 @@ Display a real-time heatmap using a python script that reads data through a seri
 
 ## 2) Setup VScode  
 * Install VScode from the following link https://code.visualstudio.com/.
-* install python from the following link https://www.python.org/. If you are on LINUX you might have it already installed, to check open the terminal and type `python3 --version`, the same code can be used on command window (cmd) on Windowns.
+* install python from the following link https://www.python.org/. If you are on LINUX you probably have it already installed, to check open the terminal and type `python3 --version`, the same code can be used on command window (cmd) on Windowns.
 * Install pip:
     * On Windows run the following command on command line (cmd): `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
     * On LINUX run the following commands on terminal: `sudo apt update`, `sudo apt install python3-pip`. to check the version type `pip3 --version`.
