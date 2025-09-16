@@ -21,7 +21,7 @@ Display a real-time heatmap using a python script that reads data through a seri
 * Install VScode from the following link https://code.visualstudio.com/.
 * install python from the following link https://www.python.org/. If you are on LINUX you probably have it already installed, to check open the terminal and type `python3 --version`, the same code can be used on command window (cmd) on Windows.
 * Install pip:
-    * On Windows run the following command on command line (cmd): `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
+    * On Windows run the following command on command line (cmd) `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
     * On LINUX run the following commands on terminal: `sudo apt update`, `sudo apt install python3-pip`. to check the version type `pip3 --version`.
 * Open VScode, use the following shortcut to open the extension search bar __CTRL+Shift+X__, search __python__, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
 * Install __pyserial numpy and matplotlib__, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
