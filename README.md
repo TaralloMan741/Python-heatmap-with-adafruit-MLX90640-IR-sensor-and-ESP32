@@ -6,6 +6,7 @@ Display a real-time heatmap using a python script that reads data through a seri
 * VScode
 * ESP32 dev kit C V2
 * Adafruit MLX 90640 IR sensor
+* Bread-board and jumpers (in case the esp32 and the sensor cant be directly conncted)
 
 ## 1) Setup Arduino IDE
 * Use this link https://www.arduino.cc/en/software/ to download and install youe preferred Arduino Ide version.
@@ -34,3 +35,21 @@ Display a real-time heatmap using a python script that reads data through a seri
 * On VScode create a new file. On the top left corner clock on `file >> New Text File` (choose python), use the file provided in this repository called `RT_heatmap_serial.py`.
 *save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
 <img width="1102" height="691" alt="heatmap_python" src="https://github.com/user-attachments/assets/a9a9f6ae-acb7-4677-9189-cf03deffa437" />
+
+## ESP32 and MLX90640 wiring
+| ESP32  | MLX 90640 |
+| ------------- | ------------- |
+| GP22  | SCL  |
+| GP21  | SDA  |
+| GND  | GND  |
+| 3V3  | VIN  |
+
+
+![ESP32-DOIT-DEVKIT-V1-Board-Pinout-36-GPIOs-updated](https://github.com/user-attachments/assets/230f8e6d-63ad-4918-add3-b66e808cf87b)
+<figcaption>Image found at https://randomnerdtutorials.com/esp32-pinout-reference-gpios/</figcaption> <br />
+<br />
+<br />
+
+![adafruit_products_MLX90640_55_back_pinouts](https://github.com/user-attachments/assets/94942398-c675-446f-999e-6b3590b8639b)
+<figcaption>Image found at https://learn.adafruit.com/assets/87353 Autor: Kattni Rembor License: Attribution-ShareAlike Creative Commons</figcaption>
+
