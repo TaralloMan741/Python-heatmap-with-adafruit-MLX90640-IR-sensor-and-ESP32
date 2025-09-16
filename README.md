@@ -12,9 +12,9 @@ Display a real-time heatmap using a python script that reads data through a seri
 * Use this link https://www.arduino.cc/en/software/ to download and install your preferred Arduino Ide version (on LINUX I suggest Arduino 1.8.9 Legacy instead of version 2).
 * Use this link https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html to install the ESP32 suport for Arduino.
 * (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication, `sudo usermod -a -G dialout $user`. Restart the pc to apply the changes.
-* Open the IDE and go to `tools >> board`, from the drop-donw menu choose “ESP32 Dev Module”.
-* Connect the board and go to `tools >> port` to select the port which the board is connected to. On windows it is called `COM3` (the number may change), for linux users the port is called `/dev/ttyUSB0`.
-* Install the libraries for MLX 90640. Go to `tools >> manage libraries`, in the library manager window search `"adafruit_mlx90640"`, click on install it will ask you if you want to install all or just mlx90640 libraries, click on `"install all"`.
+* Open the IDE and go to <ins>**tools >> board**</ins>, from the drop-down menu choose <ins>**“ESP32 Dev Module”**</ins>.
+* Connect the board and go to <ins>**tools >> port**</ins> to select the port which the board is connected to. On windows it is called __COM3__ (the number may change), for linux users the port is called __/dev/ttyUSB0__.
+* Install the libraries for MLX 90640. Go to <ins>**tools >> manage libraries**</ins>, in the library manager window search <ins>**"adafruit_mlx90640"**</ins>, click on install it will ask you if you want to install all or just mlx90640 libraries, click on <ins>"install all"</ins>"install all".
 
 ## 2) Setup VScode  
 * Install VScode from the following link https://code.visualstudio.com/.
@@ -22,17 +22,18 @@ Display a real-time heatmap using a python script that reads data through a seri
 * Install pip:
     * On Windows run the following command on command line (cmd): `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
     * On LINUX run the following commands on terminal: `sudo apt update`, `sudo apt install python3-pip`. to check the version type `pip3 --version`.
-* Open VScode, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search `python`, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
-* Install pyserial numpy and matplotlib, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
+* Open VScode, use the following shortcut to open the extension search bar __CTRL+Shift+X__, search __python__, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
+* Install __pyserial numpy and matplotlib__, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
 ## 3) Program ESP32 on Arduino IDE
-* Open Arduino IDE and create a sketch, use the script called `MLX90640_simpletest.ino` (it can be found in `Arduino folder >> libraries >> Adafruit_MLX90640 >> examples >> MLX90640_simpletest >> MLX90640_simpletest.ino`).
+* Open Arduino IDE and create a sketch, use the script called __MLX90640_simpletest.ino__ (it can be found in __Arduino folder >> libraries >> Adafruit_MLX90640 >> examples >> MLX90640_simpletest >> MLX90640_simpletest.ino__).
 
-* upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see a 32 x 24 matrix (with symbols or numbers depending on which line you commented between `PRINT_TEMPERATURES` or `PRINT_ASCIIART`), if this is not the case you have to change the BAUDRATE on the serial monitor to 115200, or whatever value is written in `Serial.begin(115200);`.
+* upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see <br />
+  a  _32 x 24_ matrix (with symbols or numbers depending on which line you commented between `PRINT_TEMPERATURES` or `PRINT_ASCIIART`), if this is not the case you have to change the BAUDRATE on the serial monitor to 115200, or whatever value is written in `Serial.begin(115200);`.
 * Before going to Vscode be sure to close the serial monitor.
 
 ## 4) Plot real-time heatmap on VScode 
-* On VScode create a new file. On the top left corner clock on `file >> New Text File` (choose python), use the file provided in this repository called `RT_heatmap_serial.py`.
+* On VScode create a new file. On the top left corner clock on <ins>**file >> New Text File**</ins> (choose python), use the file provided in this repository called __RT_heatmap_serial.py__.
 * Save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
 <img width="1102" height="691" alt="heatmap_python" src="https://github.com/user-attachments/assets/a9a9f6ae-acb7-4677-9189-cf03deffa437" />
 
