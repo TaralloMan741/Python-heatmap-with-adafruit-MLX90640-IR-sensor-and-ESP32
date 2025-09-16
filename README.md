@@ -7,7 +7,7 @@ Display a real-time heatmap using a python script that reads data through a seri
 * ESP32 dev kit C V2
 * Adafruit MLX 90640 IR sensor
 
-## 1) Setup arduino ide 
+## 1) Setup Arduino IDE
 * Use this link https://www.arduino.cc/en/software/ to download and install youe preferred Arduino Ide version.
 * Use this link https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html to install the ESP32 suport for Arduino.
 * (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication, `sudo usermod -a -G dialout $user`. Restart the pc to apply the changes.
