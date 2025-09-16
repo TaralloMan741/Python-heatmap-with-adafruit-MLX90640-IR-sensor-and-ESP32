@@ -1,7 +1,7 @@
 # Real-Time-heatmap-using-adafruit-MLX90640-IR-sensor-and-ESP32-Python
 Display a real-time heatmap using a python script that reads data through a serial port. ESP32 board collects data coming from the MLX90640 IR sensor, data are the read by the python script through the serial port to which the esp32 is connected. 
 
-## Shopping list
+## Shopping cart
 * Arduino IDE (Legacy or 2)
 * VScode
 * ESP32 dev kit C V2
@@ -33,7 +33,7 @@ Display a real-time heatmap using a python script that reads data through a seri
 
 ## 4) Plot real-time heatmap on VScode 
 * On VScode create a new file. On the top left corner clock on `file >> New Text File` (choose python), use the file provided in this repository called `RT_heatmap_serial.py`.
-*save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
+* Save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
 <img width="1102" height="691" alt="heatmap_python" src="https://github.com/user-attachments/assets/a9a9f6ae-acb7-4677-9189-cf03deffa437" />
 
 ## ESP32 and MLX90640 wiring
