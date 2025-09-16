@@ -9,7 +9,7 @@ Display a real-time heatmap using a python script that reads data through a seri
 * Bread-board and jumpers (in case the esp32 and the sensor cant be directly conncted)
 
 ## 1) Setup Arduino IDE
-* Use this link https://www.arduino.cc/en/software/ to download and install youe preferred Arduino Ide version.
+* Use this link https://www.arduino.cc/en/software/ to download and install your preferred Arduino Ide version (on LINUX I prefer Arduino 1.8.9 Legacy than version 2).
 * Use this link https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html to install the ESP32 suport for Arduino.
 * (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication, `sudo usermod -a -G dialout $user`. Restart the pc to apply the changes.
 * Open the IDE and go to `tools >> board`, from the drop-donw menu choose “ESP32 Dev Module”.
