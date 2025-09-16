@@ -24,7 +24,7 @@ Display an heatmap using a python script that reads data through a serial port. 
 * Open VScode, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search python, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
 * Install pyserial numpy and matplotlib, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
-# 3) program ESP32 on Arduino IDE
+# 3) Program ESP32 on Arduino IDE
 * Open Arduino IDE and create a sketch, use the following script provided by Adafruit, you can find it in `Arduino folder >> libraries >> Adafruit_MLX90640 >> examples >> MLX90640_simpletest >> MLX90640_simpletest.ino`:
 
 ```
@@ -129,7 +129,7 @@ void loop() {
 * upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see a 32 x 24 matrix (with symbols or numbers depending on which line you commented between PRINT_TEMPERATURES or PRINT_ASCIIART). if this is not the case you have to change the BAUDRATE on the serial monitor to 115200, or whatever value is written in `Serial.begin(115200);`.
 * Before going to Vscode be sure to close the serial monitor.
 
-# 4) plot real-time heatmap on VScode 
+# 4) Plot real-time heatmap on VScode 
 * Open a new file. On the top left corner clock on `file >> New Text File` (choose python) and copy the foolowing script:
   
 ```
