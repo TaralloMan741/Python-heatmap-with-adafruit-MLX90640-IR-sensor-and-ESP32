@@ -11,10 +11,11 @@ Display a real-time heatmap using a python script that reads data through a seri
 ## 1) Setup Arduino IDE
 * Use this link https://www.arduino.cc/en/software/ to download and install your preferred Arduino Ide version (on LINUX I suggest Arduino 1.8.9 Legacy instead of version 2).
 * Use this link https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html to install the ESP32 suport for Arduino.
-* (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication, `sudo usermod -a -G dialout $user`. Restart the pc to apply the changes.
+* (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication <br />
+   `sudo usermod -a -G dialout $user`. Restart the pc to apply the changes.
 * Open the IDE and go to <ins>**tools >> board**</ins>, from the drop-down menu choose <ins>**“ESP32 Dev Module”**</ins>.
 * Connect the board and go to <ins>**tools >> port**</ins> to select the port which the board is connected to. On windows it is called __COM3__ (the number may change), for linux users the port is called __/dev/ttyUSB0__.
-* Install the libraries for MLX 90640. Go to <ins>**tools >> manage libraries**</ins>, in the library manager window search <ins>**"adafruit_mlx90640"**</ins>, click on install it will ask you if you want to install all or just mlx90640 libraries, click on <ins>"install all"</ins>"install all".
+* Install the libraries for MLX 90640. Go to <ins>**tools >> manage libraries**</ins>, in the library manager window search <ins>**"adafruit_mlx90640"**</ins>, click on install it will ask you if you want to install all or just mlx90640 libraries, click on <ins>"install all"</ins>.
 
 ## 2) Setup VScode  
 * Install VScode from the following link https://code.visualstudio.com/.
