@@ -10,22 +10,22 @@ Display an heatmap using a python script that reads data through a serial port. 
 # 1) Setup arduino ide 
 * Use this link https://www.arduino.cc/en/software/ to download and install youe preferred Arduino Ide version.
 * Use this link https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html to install the ESP32 suport for Arduino.
-* (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication, sudo usermod -a -G dialout $user. Restart the pc to apply the changes.
-* Open the IDE and go to tools >> board, from the drop-donw menu choose “ESP32 Dev Module”.
-* Connect the board and go to tools >> port to select the port which the board is connected to. On windows it is called COM3 (the number may change), for linux users the port is called “/dev/ttyUSB0”.
-* Install the libraries for MLX 90640. Go to tools >> manage libraries, the library manager opens up, search "adafruit_mlx90640", click on install it will ask you if you want to install all or just mlx90640 libraries, click on "all".
+* (ONLY FOR LINUX USERS) use the following command on the terminal to allow serial comunication, `sudo usermod -a -G dialout $user`. Restart the pc to apply the changes.
+* Open the IDE and go to `tools >> board`, from the drop-donw menu choose “ESP32 Dev Module”.
+* Connect the board and go to `tools >> port` to select the port which the board is connected to. On windows it is called `COM3` (the number may change), for linux users the port is called `“/dev/ttyUSB0”`.
+* Install the libraries for MLX 90640. Go to `tools >> manage libraries`, the library manager opens up, search `"adafruit_mlx90640"`, click on install it will ask you if you want to install all or just mlx90640 libraries, click on `"install all"`.
 
 # 2) Setup VS code  
 * Install VS code from the following link https://code.visualstudio.com/.
-* install python from the following link https://www.python.org/. If you are on LINUX you might have it already installed, to check open the terminal and type python3 --version, the same code can be used on command window (cmd) on Windowns.
+* install python from the following link https://www.python.org/. If you are on LINUX you might have it already installed, to check open the terminal and type `python3 --version`, the same code can be used on command window (cmd) on Windowns.
 * Install pip:
-    * On Windows run the following command on command line (cmd): python -m ensurepip --upgrade, then check if pip is installed by running pip3 --version
-    * On LINUX run the following commands on terminal: sudo apt update, sudo apt install python3-pip. to check the version type pip3 --version.
-* Open VS code, use the following shortcut to open the extension search bar CTRL+Shift+X, search python, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
-* Install pyserial numpy and matplotlib, on Vs code open the terminal and type: pip3 install pyserial numpy matplotlib.
+    * On Windows run the following command on command line (cmd): `python -m ensurepip --upgrade`, then check if pip is installed by running `pip3 --version`
+    * On LINUX run the following commands on terminal: `sudo apt update`, `sudo apt install python3-pip`. to check the version type `pip3 --version`.
+* Open VS code, use the following shortcut to open the extension search bar `CTRL+Shift+X`, search python, if not installed install it (do not install python debugger), it will automatically install all the needed extensions.
+* Install pyserial numpy and matplotlib, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
 # 3) program ESP32 on Arduino IDE
-* Open Arduino IDE and create a sketch, use the following script provided by Adafruit, you can find it in Arduino folder >> libraries >> Adafruit_MLX90640 >> examples >> MLX90640_simpletest >> MLX90640_simpletest.ino:
+* Open Arduino IDE and create a sketch, use the following script provided by Adafruit, you can find it in `Arduino folder >> libraries >> Adafruit_MLX90640 >> examples >> MLX90640_simpletest >> MLX90640_simpletest.ino`:
 
 ```
 #include <Adafruit_MLX90640.h>
@@ -130,7 +130,7 @@ void loop() {
 * Before going to Vs code be sure to close the serial monitor.
 
 # 4) plot real-time heatmap on VS code 
-* Open a new file. On the top left corner clock on file >> New Text File (choose python) and copy the foolowing script:
+* Open a new file. On the top left corner clock on `file >> New Text File` (choose python) and copy the foolowing script:
   
 ```
 import serial
