@@ -130,7 +130,7 @@ void loop() {
 * Before going to Vscode be sure to close the serial monitor.
 
 # 4) Plot real-time heatmap on VScode 
-* Open a new file. On the top left corner clock on `file >> New Text File` (choose python) and copy the foolowing script:
+* On VScode create a new file. On the top left corner clock on `file >> New Text File` (choose python) and copy the foolowing script:
   
 ```
 import serial
