@@ -178,5 +178,5 @@ finally:
     ser.close()
 ```
 
-* save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this 
+* save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
 <img width="1102" height="691" alt="heatmap_python" src="https://github.com/user-attachments/assets/a9a9f6ae-acb7-4677-9189-cf03deffa437" />
