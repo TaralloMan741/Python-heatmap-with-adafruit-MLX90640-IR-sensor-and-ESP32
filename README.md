@@ -27,18 +27,21 @@ Display a real-time heatmap using a python script that reads data through a seri
 * Install __pyserial numpy and matplotlib__, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
 ## 3) Program ESP32 on Arduino IDE
-* Open Arduino IDE and create a sketch, use the script called __MLX90640_simpletest.ino__ (it can be found in __Arduino folder >> libraries >> Adafruit_MLX90640 >> examples >> MLX90640_simpletest >> MLX90640_simpletest.ino__).
+* Open Arduino IDE and create a sketch, use the script called __MLX90640_32Hz.ino__. Use the 32Hz setting, otherwise it will not work with Python code below.
 
-* upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see <br />
-  a  _32 x 24_ matrix (with symbols or numbers depending on which line you commented between `PRINT_TEMPERATURES` or `PRINT_ASCIIART`), if this is not the case you have to change the BAUDRATE on the serial monitor to 115200, or whatever value is written in `Serial.begin(115200);`.
+* upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see a stream of numbers, representing each pixel temperature, if this is not the case you have to change the BAUDRATE on the serial monitor to 460800, or whatever value is written in `Serial.begin(460800);`.
 * Before going to Vscode be sure to close the serial monitor.
 
 ## 4) Plot real-time heatmap on VScode 
-* On VScode create a new file. On the top left corner clock on <ins>**file >> New Text File**</ins> (choose python), use the file provided in this repository called __RT_heatmap_serial.py__.
+* On VScode create a new file. On the top left corner clock on <ins>**file >> New Text File**</ins> (choose python), use the file provided in this repository called __heat_map_32Hz.py__.
 * Save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
-<img width="1102" height="691" alt="heatmap_python" src="https://github.com/user-attachments/assets/a9a9f6ae-acb7-4677-9189-cf03deffa437" />
+
+https://github.com/user-attachments/assets/55c8c5ca-f98b-4da1-a4e4-8f94753d5188
+
 
 ## ESP32 and MLX90640 wiring
+
+
 | ESP32  | MLX 90640 |
 | ------------- | ------------- |
 | GP22  | SCL  |
