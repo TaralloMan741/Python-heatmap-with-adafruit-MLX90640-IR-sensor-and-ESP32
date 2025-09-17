@@ -27,13 +27,13 @@ Display a real-time heatmap using a python script that reads data through a seri
 * Install __pyserial numpy and matplotlib__, on Vs code open the terminal and type: `pip3 install pyserial numpy matplotlib`.
 
 ## 3) Program ESP32 on Arduino IDE
-* Open Arduino IDE and create a sketch, use the script called __MLX90640_32Hz.ino__. Use the 32Hz setting, otherwise it will not work with Python code below.
+* Open Arduino IDE and create a sketch, use the script called <a href="https://github.com/TaralloMan741/Real-time-heatmap-python-MLX90640-ESP32/blob/main/MLX90640_32Hz.ino">__MLX90640_32Hz.ino__</a>. Use the 32Hz setting, otherwise it will not work with Python code below.
 
 * upload the sketch on the ESP32, then open the serial monitor to verify that the ESP32 is functioning correctly, you shoud see a stream of numbers, representing each pixel temperature, if this is not the case you have to change the BAUDRATE on the serial monitor to 460800, or whatever value is written in `Serial.begin(460800);`.
 * Before going to Vscode be sure to close the serial monitor.
 
 ## 4) Plot real-time heatmap on VScode 
-* On VScode create a new file. On the top left corner clock on <ins>**file >> New Text File**</ins> (choose python), use the file provided in this repository called __heat_map_32Hz.py__.
+* On VScode create a new file. On the top left corner clock on <ins>**file >> New Text File**</ins> (choose python), use the file provided in this repository called <a href="https://github.com/TaralloMan741/Real-time-heatmap-python-MLX90640-ESP32/blob/main/heat_map_32Hz.py">__heat_map_32Hz.py__</a>.
 * Save the file in the desired location ad the run it by clicking the triangle shaped button on the top right side. You should see something like this:
 
 https://github.com/user-attachments/assets/55c8c5ca-f98b-4da1-a4e4-8f94753d5188
